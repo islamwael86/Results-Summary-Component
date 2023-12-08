@@ -6,7 +6,6 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-  - [Links](#links)
   - [Built with](#built-with)
   - [Author](#author)
 
@@ -22,10 +21,6 @@ Users should be able to:
 
 [![SCREEN-2.png](https://i.postimg.cc/C5dQVbYw/SCREEN-2.png)](https://postimg.cc/bScTxDs5)
 [![SCREEN-1.png](https://i.postimg.cc/2yVrXqKZ/SCREEN-1.png)](https://postimg.cc/jn0pDjKx)
-
-### Links
-
-- Live Site URL: [Add live site URL here](hhttps://islamwael86.github.io/results-summary-component-main/)
 
 ### Built with
 

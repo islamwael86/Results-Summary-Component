@@ -1,0 +1,258 @@
+
+@font-face {
+    font-family:'customFont';
+    src:url('../results-summary-component-main/assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
+}
+
+body {
+    font-family: customFont;
+    margin: 0;
+    width: 1440px;
+}
+
+.parent {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.result {
+    color: white;
+    text-align: center;
+    background-image:linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%)) ;
+    width: 350px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    z-index: 1;
+
+}
+
+.result h3 {
+    font-size: 21px;
+    margin-top: 0;
+    color: hsl(241, 100%, 89%);
+    position: relative;
+    top: 18px;
+
+
+}
+
+.counter {
+    background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    width: 165px;
+    height: 165px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 23px;
+    
+}
+
+.counter h1 {
+    font-size: 60px;
+}
+
+.counter h6 {
+    font-size: 13px;
+    color: hsl(241, 100%, 89%);
+}
+
+.counter h1, h6 {
+    margin: 0;
+}
+
+.result p {
+    margin-right: 44px;
+    margin-left: 44px;
+    color: hsl(241, 100%, 89%);
+    font-size: 18px;
+    position: relative;
+    top: -5px;
+}
+
+.result h2 {
+    font-size: 30px;
+    position: relative;
+    top: 20px;
+}
+
+
+.summary {
+    padding-left: 20px;
+    background-color: hsl(0, 0%, 100%);
+    width: 350px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: relative;
+    left: -20px;
+    box-shadow: 10px 10px 10px 0 hsl(221, 100%, 96%);
+}
+
+.summary h4 {
+    font-size: 21px;
+    position: absolute;
+    left: 65px;
+    top: 10px;
+
+}
+
+.reaction {
+    background-color: hsla(0, 100%, 67%, 0.100);
+}
+
+.reaction > span:first-child {
+    color: hsl(0, 100%, 67%);
+    margin-left: 8px;
+}
+
+.reaction span:first-child img,
+.memory span:first-child img,
+.verbal span:first-child img,
+.visual span:first-child img {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: 4px;
+}
+
+.black {
+    color: black;
+}
+
+.memory {
+    background-color: hsla(39, 100%, 56%, 0.100);
+}
+
+.memory > span:first-child {
+    color: hsl(39, 100%, 56%);
+    margin-left: 8px;
+
+}
+
+.verbal {
+    background-color: hsla(166, 100%, 37%, 0.100);
+}
+
+.verbal > span:first-child {
+    color: hsl(166, 100%, 37%);
+    margin-left: 8px;
+
+}
+
+.visual {
+    background-color: hsla(234, 85%, 45%, 0.100);
+}
+
+.visual > span:first-child {
+    color: hsl(234, 85%, 45%);
+    margin-left: 8px;
+
+}
+
+.reaction, .memory, .verbal, .visual {
+    font-weight: bold;
+    color: hsla(224, 30%, 27%, 0.623);
+    border-radius: 10px;
+    width: 250px;
+    height: 40px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: relative;
+    top: -28px
+}
+
+button {
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-weight:600;
+    color: white;
+    background-color: hsl(224, 30%, 27%);
+    width: 250px;
+    height: 50px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    border-radius: 25px;
+    border: none;
+    position:absolute;
+    bottom: 50px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-image:linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%)) ;
+}
+
+@media (max-width: 375px) {
+    body {
+        width: 375px;
+    }
+
+    .parent {
+        display: flex;
+        flex-direction: column;
+        height: 130vh;
+    }
+
+    .summary {
+        height: 70vh;
+        width: 375px;
+        border-radius: 0;
+        box-shadow: 0 0 0 0 hsl(221, 100%, 96%);
+        padding: 0;
+        position: relative;
+        left: 0;
+    }
+
+    .result {
+        width: 375px;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        height: 60vh;
+    }
+    
+    .result p {
+        margin-right: 50px;
+        margin-left: 50px;
+        color: hsl(241, 100%, 89%);
+        font-size: 15px;
+        position: relative;
+        top: -5px;
+    }
+
+    .summary h4 {
+        font-size: 18px;
+        position: absolute;
+        left: 35px;
+    }
+
+    .reaction, .memory, .verbal, .visual {
+        width: 300px;
+        height: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    button {
+        width: 320px;
+        height: 50px;
+    }
+}

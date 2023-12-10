@@ -104,13 +104,20 @@ body {
 }
 /* .summary-title */
 
-.summary > div:first-child {
+.summary h2 {
+    font-size: 21px;
+    /* font-weight: bold; */
+    position: absolute;
+    left: 65px;
+    top: 20px;
+}
+/* .summary > div:first-child {
     font-size: 21px;
     font-weight: bold;
     position: absolute;
     left: 65px;
     top: 40px;
-}
+} */
 
 #reaction {
     background-color: hsla(0, 100%, 67%, 0.100);

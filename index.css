@@ -111,19 +111,19 @@ body {
     top: 40px;
 }
 
-.reaction {
+#reaction {
     background-color: hsla(0, 100%, 67%, 0.100);
 }
 
-.reaction > span:first-child {
+#reaction > span:first-child {
     color: hsl(0, 100%, 67%);
     margin-left: 8px;
 }
 
-.reaction span:first-child img,
-.memory span:first-child img,
-.verbal span:first-child img,
-.visual span:first-child img {
+#reaction span:first-child img,
+#memory span:first-child img,
+#verbal span:first-child img,
+#visual span:first-child img {
     width: 18px;
     height: 18px;
     position: relative;
@@ -134,37 +134,37 @@ body {
     color: black;
 }
 
-.memory {
+#memory {
     background-color: hsla(39, 100%, 56%, 0.100);
 }
 
-.memory > span:first-child {
+#memory > span:first-child {
     color: hsl(39, 100%, 56%);
     margin-left: 8px;
 
 }
 
-.verbal {
+#verbal {
     background-color: hsla(166, 100%, 37%, 0.100);
 }
 
-.verbal > span:first-child {
+#verbal > span:first-child {
     color: hsl(166, 100%, 37%);
     margin-left: 8px;
 
 }
 
-.visual {
+#visual {
     background-color: hsla(234, 85%, 45%, 0.100);
 }
 
-.visual > span:first-child {
+#visual > span:first-child {
     color: hsl(234, 85%, 45%);
     margin-left: 8px;
 
 }
 
-.reaction, .memory, .verbal, .visual {
+#reaction, #memory, #verbal, #visual {
     font-weight: bold;
     color: hsla(224, 30%, 27%, 0.623);
     border-radius: 10px;
@@ -245,7 +245,7 @@ button:hover {
         left: 35px;
     }
 
-    .reaction, .memory, .verbal, .visual {
+    #reaction, #memory, #verbal, #visual {
         width: 300px;
         height: 50px;
         padding-left: 10px;

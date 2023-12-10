@@ -1,46 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" id="primary">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="./index.css">
-  
-  <title>Frontend Mentor | Results summary component</title>
-</head>
-<body>
-  <section class="parent">
-    <section class="result">
-      <h3>Your Result</h3>
-      <div class="counter">
-        <h1 >76</h1>
-        <h6>of 100</h6>
-      </div>
-      <h2>Great</h2>
-      <p>You scored higher than 65% of the people who have taken these tests.</p>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="./index.css">
+    
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
+  <body>
+    <section class="parent">
+      <section class="result">
+        <h3>Your Result</h3>
+        <div class="counter">
+          <h1 class="result-number">76</h1>
+          <div class="final-count">of 100</div>
+        </div>
+        <h2 class="comment">Great</h2>
+        <p class="paragragh">You scored higher than 65% of the people who have taken these tests.</p>
+      </section>
+      <section class="summary">
+        <div class="summary-title">Summary</div>
+        <div class="reaction">  
+          <span class="reaction-num"><img class="svg-one" src="" alt=""> <span class="category-one"> &nbsp; </span></span>
+          <span class="reaction-final-count"><span class="black">&nbsp;</span> / 100</span>
+        </div>
+        <div class="memory">  
+          <span class="memory-num"><img class="svg-two" src="" alt=""> <span class="category-two"> &nbsp; </span></span>
+          <span class="memory-final-count"><span class="black">&nbsp;</span> / 100</span>
+        </div>
+        <div class="verbal">  
+          <span class="verbal-num"><img class="svg-three" src="" alt=""> <span class="category-three"> &nbsp; </span></span>
+          <span class="verbal-final-count"><span class="black">&nbsp;</span> / 100</span>
+        </div>
+        <div class="visual">  
+          <span class="visual-num"><img class="svg-four" src="" alt=""> <span class="category-four"> &nbsp; </span></span>
+          <span class="visual-final-count"><span class="black">&nbsp;</span> / 100</span>
+        </div>
+        <button>Continue</button>
+      </section>
     </section>
-    <section class="summary">
-      <h4>Summary</h4>
-      <div class="reaction">  
-        <span><img class="svg-one" src="" alt=""> <span class="category-one"> &nbsp; </span></span>
-        <span><span class="black">&nbsp;</span> / 100</span>
-      </div>
-      <div class="memory">  
-        <span><img class="svg-two" src="" alt=""> <span class="category-two"> &nbsp; </span></span>
-        <span><span class="black">&nbsp;</span> / 100</span>
-      </div>
-      <div class="verbal">  
-        <span><img class="svg-three" src="" alt=""> <span class="category-three"> &nbsp; </span></span>
-        <span><span class="black">&nbsp;</span> / 100</span>
-      </div>
-      <div class="visual">  
-        <span><img class="svg-four" src="" alt=""> <span class="category-four"> &nbsp; </span></span>
-        <span><span class="black">&nbsp;</span> / 100</span>
-      </div>
-      <button>Continue</button>
-    </section>
-  </section>
-  <script src="./index.js"></script>
-</body>
+    <script src="./index.js"></script>
+  </body>
 </html>

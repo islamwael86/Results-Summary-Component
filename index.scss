@@ -1,0 +1,397 @@
+
+@font-face {
+    font-family:'customFont';
+    src:url('../results-summary-component-main/assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
+}
+
+body {
+    font-family: customFont;
+    margin: 0;
+}
+
+.parent {
+    width: 1440px;
+    height: 1080px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.result {
+    color: white;
+    text-align: center;
+    background-image:linear-gradient(-40deg, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+    width: 370px;
+    height: 512px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    position: relative;
+    left: 13px;
+    z-index: 1;
+}
+
+.result h3 {
+    font-size: 24px;
+    margin-top: 0;
+    color: hsl(241, 100%, 89%);
+    position: relative;
+    top: 13px;
+}
+
+.counter {
+    background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    width: 205px;
+    height: 205px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 23px;
+}
+
+.result-number {
+    font-size: 71px;
+    position:relative;
+    top: 1.5px;
+}
+
+.final-count {
+    font-size: 18px;
+    font-weight: bold;
+    color: hsla(241, 100%, 89%, 0.514);
+    position: relative;
+    top: -5px;
+}
+
+.result-number,
+.final-count {
+    margin: 0;
+}
+
+.paragragh {
+    padding-right: 55px;
+    padding-left: 55px;
+    color: hsl(241, 100%, 89%);
+    font-size: 18px;
+    position: relative;
+    top: -10px;
+}
+
+.comment {
+    font-size: 32px;
+    position: relative;
+    top: 20px;
+}
+
+
+.summary {
+    padding-left: 20px;
+    background-color: hsl(0, 0%, 100%);
+    width: 375px;
+    height: 512px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: relative;
+    left: -15px;
+    box-shadow: 3px 3px 20px 5px hsl(221, 100%, 96%);
+}
+
+.summary h2 {
+    font-size: 23px;
+    position: absolute;
+    left: 65px;
+    top: 20px;
+}
+
+#reaction {
+    background-color: hsla(0, 100%, 67%, 0.100);
+    margin-bottom: 19px;
+}
+
+#reaction > span:first-child {
+    font-size: 18px;
+    color: hsl(0, 100%, 67%);
+    margin-left: 8px;
+}
+
+#reaction span:first-child img,
+#memory span:first-child img,
+#verbal span:first-child img,
+#visual span:first-child img {
+    padding-right: 5px;
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: 4px;
+}
+
+.black {
+    color: black;
+    font-size: 17px;
+}
+
+.reaction-final-count {
+    position: relative;
+    top: 3px;
+}
+
+.memory-final-count,
+.verbal-final-count,
+.visual-final-count {
+    position: relative;
+    top: 2px;
+}
+
+.category-one {
+    position: relative;
+    top: 4px;
+}
+
+.category-two
+.category-three
+.category-four {
+    position: relative;
+    top: 3px;
+}
+
+#memory {
+    background-color: hsla(39, 100%, 56%, 0.100);
+    margin-bottom: 19px;
+}
+
+#memory > span:first-child {
+    font-size: 18px;
+    color: hsl(39, 100%, 56%);
+    margin-left: 8px;
+}
+
+#verbal {
+    background-color: hsla(166, 100%, 37%, 0.100);
+    margin-bottom: 19px;
+}
+
+#verbal > span:first-child {
+    font-size: 18px;
+    color: hsl(166, 100%, 37%);
+    margin-left: 8px;
+}
+
+#visual {
+    background-color: hsla(234, 85%, 45%, 0.100);
+}
+
+#visual > span:first-child {
+    font-size: 17px;
+    color: hsl(234, 85%, 45%);
+    margin-left: 8px;
+}
+
+#reaction, #memory, #verbal, #visual {
+    font-weight: bold;
+    color: hsla(224, 30%, 27%, 0.623);
+    border-radius: 10px;
+    width: 265px;
+    height: 54px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    top: -25px;
+    left: -5px;
+}
+
+button {
+    letter-spacing: 1px;
+    font-size: 16.5px;
+    font-weight: 600;
+    color: white;
+    background-color: hsl(224, 30%, 27%);
+    width: 280px;
+    height: 56px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    border-radius: 25px;
+    border: none;
+    position:absolute;
+    bottom: 43px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-image:linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%)) ;
+}
+
+@media (max-width: 375px) {
+
+    .parent {
+        width: 375px;
+        display: flex;
+        flex-direction: column;
+        height: 809px;
+    }
+
+    .summary {
+        height: 453px;
+        width: 375px;
+        border-radius: 0;
+        box-shadow: 0 0 0 0 hsl(221, 100%, 96%);
+        padding: 0;
+        position: relative;
+        left: 0;
+    }
+
+    .result {
+        width: 375px;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 33px;
+        border-bottom-right-radius: 33px;
+        height: 356px;
+        position: relative;
+        left: 0;
+        right: 0;
+    }
+
+    .result h3 {
+        font-size: 18px;
+        margin-top: -2px;
+    }
+
+    .counter {
+        margin-top: -5px;
+        width: 145px;
+        height: 145px;
+    }
+
+    .result-number {
+        font-size: 55px;
+        position: relative;
+        top: 0.5px;
+    }
+    
+    .final-count {
+        font-size: 16px;
+        position: relative;
+        top: -0.5px;
+    }
+
+    .comment {
+        font-size: 23.5px;
+        padding-bottom: -4px;
+        margin-top: 23px;
+        position: relative;
+        left: -1.5px;
+    }
+
+    .paragragh {
+        padding-top: 4px;
+        padding-right: 50px;
+        padding-left: 50px;
+        color: hsl(241, 100%, 89%);
+        font-size: 16px;
+    }
+    
+    .summary h2 {
+        margin-top: 3px;
+        font-size: 18px;
+        position: absolute;
+        left: 32px;
+    }
+
+    #reaction, #memory, #verbal, #visual {
+        width: 300px;
+        height: 55px;
+        padding-left: 10px;
+        padding-right: 10px;
+        position:relative;
+        top: -21px;
+    }
+
+    #reaction {
+        margin-top: 2px;
+        margin-bottom: 18px;
+    }
+
+    #memory {
+        margin-bottom: 18px;
+    }
+
+    .black {
+        font-size: 16px;
+        padding-right: 3px;
+    }
+
+    .reaction-final-count {
+        font-size: 16px;
+        position: relative;
+        top: 1.5px;
+        left: -9px;
+    }
+
+    .memory-final-count {
+        font-size: 16px;
+        position: relative;
+        top: 0.5px;
+        left: -9px;
+    }
+    
+    .verbal-final-count {
+        font-size: 16px;
+        position: relative;
+        top: -1px;
+        left: -9px;
+    }
+
+    .visual-final-count {
+        font-size: 16px;
+        position: relative;
+        top: -2px;
+        left: -9px;
+    }
+
+    #reaction > span:first-child,
+    #memory > span:first-child,
+    #verbal > span:first-child,
+    #visual > span:first-child {
+        font-size: 16px;
+    }
+
+    .category-one {
+        position: relative;
+        top: 1px;
+        left: 7px;
+    }
+    
+    .category-two,
+    .category-three {
+        position: relative;
+        top: -1px;
+        left: 7px;
+    }
+
+    .category-four {
+        position: relative;
+        top: -3px;
+        left: 7px;
+    }
+
+    button {
+        padding-top: 2px;
+        padding-bottom: 0;
+        width: 320px;
+        height: 56px;
+        position:absolute;
+        bottom: 27px;
+    }
+}
